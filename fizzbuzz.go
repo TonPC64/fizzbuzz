@@ -1,5 +1,5 @@
 package fizzbuzz
 
 func Say(n int) string {
-	return ""
+	return "1"
 }
