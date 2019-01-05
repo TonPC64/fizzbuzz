@@ -1,0 +1,15 @@
+package fizzbuzz_test
+
+import (
+	"testing"
+
+	"github.com/TonPC64/fizzbuzz"
+)
+
+func TestFizzBuzzShouldSayOne(t *testing.T) {
+	result := fizzbuzz.Say(1)
+	expected := "1"
+	if result != expected {
+		t.Errorf("it should say %q but get %q", expected, result)
+	}
+}
