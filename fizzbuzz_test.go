@@ -29,3 +29,11 @@ func TestFizzBuzzShouldSayFizz(t *testing.T) {
 		t.Errorf("it should say %q but get %q", expected, result)
 	}
 }
+
+func TestFizzBuzzShouldSayBuzz(t *testing.T) {
+	result := fizzbuzz.Say(5)
+	expected := "Buzz"
+	if result != expected {
+		t.Errorf("it should say %q but get %q", expected, result)
+	}
+}
